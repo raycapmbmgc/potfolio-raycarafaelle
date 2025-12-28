@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayca Rafaelle | Portfólio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<%- include("partials/header") %>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Desenvolvedora Fullstack</h2>
+    <p>
+      Desenvolvo sistemas web completos, escaláveis e integrados com APIs,
+      focados em usabilidade e resultados reais.
+    </p>
+
+    <span class="location">📍 Maceió, AL</span>
+
+    <div class="buttons">
+      <a href="#projetos" class="btn primary">Ver Projetos</a>
+      <a href="/cv.pdf" class="btn secondary">Download CV</a>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="/img/profile.jpeg" alt="Foto profissional de Rayca Rafaelle" />
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" class="projects">
+  <h3>Projetos em Destaque</h3>
+  <p class="subtitle">
+    Alguns projetos desenvolvidos do zero, aplicando boas práticas e visão de produto.
+  </p>
+
+  <div class="cards">
+
+    <!-- PROJETO 1 -->
+    <article class="card">
+      <img src="/img/painel.png" alt="Painel administrativo" />
+      <h4>Painel Administrativo</h4>
+      <p>
+        Sistema completo para gerenciamento de produtos, usuários e pedidos,
+        com autenticação e integrações externas.
+      </p>
+      <span>React • Node.js • PostgreSQL</span>
+      <div class="card-buttons">
+        <a href="#" target="_blank">Ver Demo</a>
+        <a href="#" target="_blank">Código</a>
+      </div>
+    </article>
+
+    <!-- PROJETO 2 -->
+    <article class="card">
+      <img src="/img/agendamento.png" alt="Plataforma de agendamentos" />
+      <h4>Plataforma de Agendamentos</h4>
+      <p>
+        Aplicação SaaS para agendamento de serviços com painel administrativo
+        e controle de clientes.
+      </p>
+      <span>Vue.js • Node.js • MongoDB</span>
+      <div class="card-buttons">
+        <a href="#" target="_blank">Ver Demo</a>
+        <a href="#" target="_blank">Código</a>
+      </div>
+    </article>
+
+    <!-- PROJETO 3 -->
+    <article class="card">
+      <img src="/img/blog.png" alt="Blog com autenticação" />
+      <h4>Blog com Autenticação</h4>
+      <p>
+        Blog com sistema de login JWT, gerenciamento de posts,
+        usuários e permissões.
+      </p>
+      <span>React • Node.js • PostgreSQL</span>
+      <div class="card-buttons">
+        <a href="#" target="_blank">Ver Demo</a>
+        <a href="#" target="_blank">Código</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="about">
+  <div class="about-container">
+    <h3>Sobre mim</h3>
+    <p>
+    Desenvolvedora Web Fullstack em início de carreira, com experiência prática em criação de sites
+institucionais, lojas online e sistemas administrativos. Atuei como freelancer entregando soluções
+digitais personalizadas, com foco em usabilidade, integração com WhatsApp e design responsivo.
+Tenho experiência em React, Node.js e Vue.js, além de noções em Docker e Linux. Busco
+oportunidade para aplicar e expandir minhas habilidades em desenvolvimento de sistemas,
+contribuindo com inovação e resultados.
+    </p>
+
+    <div class="techs">
+      <span>Python</span>
+  <span>Java</span>
+  <span>JavaScript</span>
+  <span>HTML5</span>
+  <span>CSS3</span>
+
+  <span>React.js</span>
+  <span>Vue.js</span>
+  <span>Node.js</span>
+  <span>Bootstrap</span>
+  <span>SQL</span>
+  <span>MySQL</span>
+  <span>Git</span>
+  <span>GitHub</span>
+  <span>Docker</span>
+  <span>VS Code</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contact">
+  <div class="contact-container">
+    <h3>Vamos conversar?</h3>
+    <p>
+      Estou aberta a oportunidades, freelances e projetos desafiadores.
+      Entre em contato comigo 👇
+    </p>
+
+    <div class="buttons">
+      <a href="https://wa.me/5582996304284" class="btn primary" target="_blank">
+        WhatsApp
+      </a>
+      <a href="https://www.linkedin.com/in/rayca-r-0a5808285/" class="btn secondary" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
+
+<!-- DARK / LIGHT -->
+<script>
+  const toggle = document.getElementById("themeToggle")
+  if (toggle) {
+    toggle.onclick = () => {
+      document.body.classList.toggle("light")
+    }
+  }
+</script>
+
+</body>
+</html>
