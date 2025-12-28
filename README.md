@@ -1,1 +1,1 @@
-https://potfolio-raycarafaelle.netlify.app/
+https://potfolio-raycarafaelle.vercel.app/
